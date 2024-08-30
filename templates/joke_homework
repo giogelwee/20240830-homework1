@@ -1,0 +1,7 @@
+<h2>Joke Generated:</h2>
+<!-- This will auto=display the joke generated because there isn't a button to click, so it will just display-->
+<p>{{ joke }}</p>
+<!-- This will only return to the main page when the 'Main' button is clicked. Action = '/' because it will back track from the joke_homework URL back to the root URL-->
+<form action="/" method="get">
+    <input type="submit" value="Main">
+</form>
