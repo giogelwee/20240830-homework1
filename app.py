@@ -2,7 +2,8 @@ import google.generativeai as palm
 from flask import Flask, render_template, request
 
 # Indicate API key used
-api='AIzaSyDUP0SCxU19X8jclqd_ekU-lwp-mfc3Cus'
+import os
+api= os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=api)
 
 # INdicate model used
