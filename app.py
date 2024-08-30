@@ -7,7 +7,7 @@ api= os.getenv("MAKERSUITE_API_TOKEN")
 palm.configure(api_key=api)
 
 # INdicate model used
-model = palm.GenerativeModel('gemini-pro')
+model = {"model": "models/text-bison-001"}
 
 # Set up app
 app = Flask(__name__)
